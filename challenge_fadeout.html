@@ -1,0 +1,47 @@
+<html>
+	<head>
+	
+		<title>fadeout challenge</title>
+		
+		<style type="text/css">
+		
+		</style>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+	
+		<p id="p1">This is some text.</p>
+		
+		<p style="display:none" id="p2">This is some more text here.</p>
+		
+		<button id="fadeout">Click to fadeout</button>
+		
+		<button id="fadein">Click to fadin</button>
+		
+		<button type="toggle" id="toggle">toggle it!</button>
+	
+		<script type="text/javascript">
+		
+			$("#fadeout").click(function(){
+				$("#p1").fadeOut();
+			})
+			
+			$("#fadein").click(function(){
+				$("#p2").fadeIn();
+			})
+			
+			$("#toggle").click(function(){
+				if(($("#p1").css("display"))=="none")
+					$("#p1").fadeIn();
+				else
+					$("#p1").fadeOut();
+			})
+		
+		</script>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>My jQuery lessons</title>
+		
+		<style type="text/css">
+			#circle{
+				background-color:pink;
+				height:150px;
+				width:150px;
+				border-radius:50%
+				margin:20px;
+			}
+			
+		</style>
+		
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="circle"></div>
+		
+		<iframe src="http://www.facebook.com"></iframe>
+	
+		<script>
+			
+			$("circle").click(function(){
+				$("iframe").attr("src" , "https://www.google.com")
+			});
+		
+		</script>
+	
+	</body>
+	
+</html>

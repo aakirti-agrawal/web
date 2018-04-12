@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title></title>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<style type="text/css">
+			
+			#circle{
+				background-color:green;
+				border-radius:50%;
+				height:100px;
+				width:100px;
+				margin:10px;
+			}
+			
+			.square{
+				background-color:red;
+				height:100px;
+				width:100px;
+				margin:10px;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+	<div id="circle"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<p>This is some text</p>
+	
+	</body>
+	
+	<script>
+		$(".square").click(function(){
+			alert("Square was clicked!")
+		});
+		
+		$("#circle").click(function(){
+			$("p").html("This text has changed");
+		});
+	</script>
+	
+</html>

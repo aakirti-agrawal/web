@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Changinng styles with jquery</title>
+		
+		<style type="text/css">
+		
+			#circle{
+				background-color:pink;
+				height:150px;
+				width:150px;
+				border-radius:50%;
+				margin:20px;
+			}
+			
+			#black{
+				background-color:black;
+				height:150px;
+				width:150px;
+				border-radius:50%;
+				margin:20px;
+			}
+			
+		</style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+		
+		<div id="circle"></div>
+		
+		<div id="black"></div>
+		
+		<script type="text/javascript">
+		
+			$("#circle").click(function(){
+				$("#circle").css("background-color" , "blue");
+			});
+			
+			$("#black").click(function(){
+				alert($("#black").css("background-color"));
+			});
+			
+			alert($("body").css("width"));
+			
+		</script>
+	
+	</body>
+	
+</html>
